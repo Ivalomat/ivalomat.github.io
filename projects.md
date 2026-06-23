@@ -2,15 +2,13 @@
 layout: default
 ---
 
-# Ivan Lopez Mata
+# Projects
 
-Chemoinformatics+ Erasmus Mundus Student
+Some non and chemistry related projects I've carried out in sense of enjoying.
 
-## Projects
+## Electronic countg application
 
 - Computational Chemistry
-- Chemoinformatics
-- Materials Science
 
 ## Navigation
 
