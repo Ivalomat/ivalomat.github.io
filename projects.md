@@ -6,11 +6,13 @@ layout: default
 
 Some non and chemistry related projects I've carried out in sense of enjoying.
 
-## Electronic countg application
+## Electronic counting application
 
-- Computational Chemistry
+- An android mobile app was developed during a course related to chemistry education to help students to leran more easily basic concepts related to coordination chemistry.
 
-## Navigation
+## Simmetry visualizarion app
+
+- an android mobile app was developed for 
 
 - [Research](research.md)
 - [CV](cv.html)
