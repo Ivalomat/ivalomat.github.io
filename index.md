@@ -14,7 +14,7 @@ Chemoinformatics+ Erasmus Mundus Student
 
 ## Navigation
 
-- [Research](research.dm)
+- [Research](research.md)
 - [CV](cv.html)
 - [Projects](projects.html)
 - [Contact](contact.html)
