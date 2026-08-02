@@ -1,0 +1,94 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.900
+This is a deck of cards designed with specific features.
+
+00:00:04.830 --> 00:00:08.200
+In this case, the cards represent the fourteen Bravais lattices.
+
+00:00:08.970 --> 00:00:14.000
+At the top of each card, there is an example of an element or compound
+that exhibits that structural arrangement.
+
+00:00:14.620 --> 00:00:20.040
+The image in the center acts as the visual target used by the application,
+which I will demonstrate shortly.
+
+00:00:20.580 --> 00:00:25.100
+At the bottom, the card identifies the Bravais lattice that will be displayed.
+
+00:00:25.710 --> 00:00:34.070
+For example, this card represents a base-centered orthorhombic lattice.
+The card colors also indicate the type of centering.
+
+00:00:34.850 --> 00:00:38.280
+Purple cards represent base-centered lattices.
+
+00:00:38.830 --> 00:00:41.630
+Green cards represent face-centered lattices.
+
+00:00:42.230 --> 00:00:45.360
+Blue cards represent body-centered lattices.
+
+00:00:45.880 --> 00:00:48.290
+Red cards represent primitive lattices.
+
+00:00:48.300 --> 00:00:58.000
+I will now demonstrate how the application works using an augmented reality tool
+that I developed for this purpose.
+
+00:00:59.070 --> 00:01:02.580
+For a clearer demonstration, I will use only one card at a time.
+
+00:01:03.170 --> 00:01:07.190
+Here is my device.
+
+00:01:08.400 --> 00:01:12.050
+The image may appear slightly unstable because both cameras are moving,
+but the application correctly recognizes the card.
+
+00:01:12.500 --> 00:01:18.400
+In this example, the application displays a monoclinic lattice.
+
+00:01:18.970 --> 00:01:25.460
+The lattice parameters are shown next to the three-dimensional model.
+
+00:01:26.080 --> 00:01:34.160
+The three cell lengths are different. The alpha and gamma angles are equal to
+ninety degrees, while beta has a different value.
+
+00:01:35.370 --> 00:01:40.760
+I will now use another card.
+
+00:01:40.770 --> 00:01:48.550
+This one represents a face-centered orthorhombic lattice.
+
+00:01:48.550 --> 00:01:56.390
+When I place the device camera over the card again,
+the application recognizes the visual target.
+
+00:01:56.390 --> 00:02:04.050
+It then displays the corresponding three-dimensional lattice model
+and its structural information.
+
+00:02:04.880 --> 00:02:11.310
+The models may be difficult to observe steadily in this recording
+because of the simultaneous movement of the device and the recording camera.
+
+00:02:11.310 --> 00:02:18.680
+However, all fourteen cards are loaded in the application
+and function correctly.
+
+00:02:18.680 --> 00:02:26.470
+For a clearer view of every model, the application can also be demonstrated in person.
+
+00:02:26.470 --> 00:02:34.380
+The project is presented as an educational card deck.
+The instructions ask the user to place the application camera over a card.
+
+00:02:34.380 --> 00:02:43.570
+Each card contains information about the Bravais lattice that will be displayed,
+along with an example of an element or compound with that structural arrangement.
+
+00:02:44.100 --> 00:02:47.710
+This is the basic way in which Bravais Net works.

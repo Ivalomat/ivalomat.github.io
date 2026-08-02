@@ -1,0 +1,19 @@
+Bravais Net - English Translation
+
+This is a deck of cards designed with specific features. In this case, the cards represent the fourteen Bravais lattices.
+
+At the top of each card, there is an example of an element or compound that exhibits that structural arrangement. The image in the center acts as the visual target used by the application, which I will demonstrate shortly. At the bottom, the card identifies the Bravais lattice that will be displayed.
+
+For example, this card represents a base-centered orthorhombic lattice. The card colors also indicate the type of centering. Purple cards represent base-centered lattices; green cards represent face-centered lattices; blue cards represent body-centered lattices; and red cards represent primitive lattices.
+
+I will now demonstrate how the application works using an augmented reality tool that I developed for this purpose. For a clearer demonstration, I will use only one card at a time.
+
+Here is my device. The image may appear slightly unstable because both cameras are moving, but the application correctly recognizes the card.
+
+In this example, the application displays a monoclinic lattice. The lattice parameters are shown next to the three-dimensional model. The three cell lengths are different. The alpha and gamma angles are equal to ninety degrees, while beta has a different value.
+
+I will now use another card. This one represents a face-centered orthorhombic lattice. When I place the device camera over the card again, the application recognizes the visual target. It then displays the corresponding three-dimensional lattice model and its structural information.
+
+The models may be difficult to observe steadily in this recording because of the simultaneous movement of the device and the recording camera. However, all fourteen cards are loaded in the application and function correctly. For a clearer view of every model, the application can also be demonstrated in person.
+
+The project is presented as an educational card deck. The instructions ask the user to place the application camera over a card. Each card contains information about the Bravais lattice that will be displayed, along with an example of an element or compound with that structural arrangement.
