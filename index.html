@@ -34,6 +34,30 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    /* Publications section: tighter spacing and right-aligned details button */
+    #publications .section-title {
+      padding-bottom: 18px;
+    }
+
+    #publications .service-header {
+      margin-bottom: 28px;
+    }
+
+    #publications .service-summary {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+      #publications .service-summary {
+        justify-content: center;
+      }
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -796,18 +820,14 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Publications</h2>
-        <p>Selected scientific and technical publications developed through research training, data science, and laboratory computing experience.</p>
+        <p>A selection of my scientific work in theoretical chemistry, data science and computer laboratory experience.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
+          <div class="row">
+            <div class="col-12">
               <div class="service-summary">
                 <a href="publications.html" class="service-btn">
                   View Publication Details
