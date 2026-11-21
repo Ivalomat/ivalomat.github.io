@@ -50,7 +50,28 @@
         justify-content: center;
       }
     }
-  </style>
+  
+/* Achievements: editorial, certificate-inspired grid, consistent with SnapFolio. */
+#achievements .section-title { padding-bottom: 26px; }
+#achievements .achievement-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px; }
+#achievements .achievement-entry { position:relative;min-height:248px;padding:29px 27px 25px;background:var(--surface-color);border:1px solid color-mix(in srgb,var(--default-color),transparent 88%);border-radius:13px;display:flex;flex-direction:column;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+#achievements .achievement-entry:not(.achievement-empty):hover { transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent-color),transparent 55%);box-shadow:0 15px 30px color-mix(in srgb,var(--background-color),transparent 45%); }
+#achievements .achievement-entry:before {content:"";position:absolute;top:0;left:27px;width:48px;height:3px;border-radius:0 0 3px 3px;background:var(--accent-color);}
+#achievements .achievement-meta {display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--default-color);opacity:.72;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:27px;}
+#achievements .achievement-number {font-variant-numeric:tabular-nums;}
+#achievements .achievement-entry h3 {font-size:19px;font-weight:700;line-height:1.34;margin:0 0 13px;color:var(--heading-color);}
+#achievements .achievement-entry p {font-size:14px;line-height:1.65;color:var(--default-color);opacity:.82;margin:0 0 23px;}
+#achievements .achievement-diploma {display:inline-flex;align-items:center;gap:9px;align-self:flex-start;margin-top:auto;font-size:13px;font-weight:600;color:var(--accent-color);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent-color),transparent 60%);padding-bottom:3px;}
+#achievements .achievement-diploma:hover {color:var(--heading-color);border-color:var(--heading-color);}
+#achievements .achievement-diploma i {font-size:15px;}
+#achievements .achievement-empty {min-height:248px;background:transparent;border:1px dashed color-mix(in srgb,var(--default-color),transparent 80%);justify-content:center;}
+#achievements .achievement-empty:before {background:color-mix(in srgb,var(--default-color),transparent 80%);}
+#achievements .achievement-empty .achievement-meta {margin-bottom:18px;}
+#achievements .achievement-empty h3 {opacity:.48;font-weight:500;}
+#achievements .achievement-empty p {opacity:.5;margin:0;}
+@media(max-width:991.98px){#achievements .achievement-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:575.98px){#achievements .achievement-grid {grid-template-columns:1fr;}#achievements .achievement-entry {min-height:225px;}}
+</style>
 </head>
 <body class="index-page">
 <header class="header dark-background d-flex flex-column justify-content-center" id="header">
@@ -61,7 +82,7 @@
 <li><a class="active" href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
 <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
 <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-<li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+<li><a href="#achievements"><i class="bi bi-award navicon"></i> Achievements</a></li><li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
 <li><a href="#publications"><i class="bi bi-journal-text navicon"></i> Publications</a></li>
 <li><a href="#recommendations"><i class="bi bi-file-earmark-check navicon"></i> Recommendations</a></li>
 <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
@@ -397,6 +418,50 @@
 </div>
 </section><!-- /Resume Section -->
 <!-- Portfolio Section -->
+
+<!-- Achievements Section -->
+<section aria-labelledby="achievements-title" class="achievements section" id="achievements">
+<div class="container section-title" data-aos="fade-up">
+<h2 id="achievements-title">Achievements</h2>
+<p>Academic distinctions and science competitions from the early stages of my academic training.</p>
+</div>
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+<div class="achievement-grid">
+<article class="achievement-entry" data-aos="fade-up">
+<div class="achievement-meta"><span>National Chemistry Olympiad</span><span class="achievement-number">2019</span></div>
+<h3>Third Place · National Chemistry Olympiad</h3>
+<p>Third-place distinction at the national level in the Mexican Chemistry Olympiad.</p>
+<a aria-label="Download third place National Chemistry Olympiad diploma PDF" class="achievement-diploma" download="Chemistry-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-chemistry-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i> Download diploma (PDF)</a>
+</article>
+<article class="achievement-entry" data-aos="fade-up" data-aos-delay="80">
+<div class="achievement-meta"><span>National Mathematics Olympiad</span><span class="achievement-number">2019</span></div>
+<h3>Honorable Mention · National Mathematics Olympiad</h3>
+<p>Honorable mention in the national mathematics competition.</p>
+<a aria-label="Download National Mathematics Olympiad honorable mention diploma PDF" class="achievement-diploma" download="Mathematics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-mathematics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i> Download diploma (PDF)</a>
+</article>
+<article class="achievement-entry" data-aos="fade-up" data-aos-delay="160">
+<div class="achievement-meta"><span>Physics Olympiad</span><span class="achievement-number">2019</span></div>
+<h3>Third Place at State Level · National Participation</h3>
+<p>Third place in the state Physics Olympiad and participation in the national competition.</p>
+<a aria-label="Download Physics Olympiad diploma PDF" class="achievement-diploma" download="Physics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-physics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i> Download diploma (PDF)</a>
+</article>
+<article class="achievement-entry" data-aos="fade-up">
+<div class="achievement-meta"><span>Science &amp; Engineering Fair</span><span class="achievement-number">2018</span></div>
+<h3>State Winner · National Science and Engineering Fair</h3>
+<p>Winner at the state level and participant in the national Science and Engineering Fair.</p>
+<a aria-label="Download 2018 Science and Engineering Fair diploma PDF" class="achievement-diploma" download="Science-Engineering-Fair-2018-Diploma.pdf" href="assets/docs/achievement-science-engineering-fair-2018.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i> Download diploma (PDF)</a>
+</article>
+<article aria-label="Space reserved for a future achievement" class="achievement-entry achievement-empty">
+<div class="achievement-meta"><span>Future recognition</span><span class="achievement-number">05</span></div>
+<h3>To be added</h3><p>Reserved for a future academic distinction.</p>
+</article>
+<article aria-label="Space reserved for a future achievement" class="achievement-entry achievement-empty">
+<div class="achievement-meta"><span>Future recognition</span><span class="achievement-number">06</span></div>
+<h3>To be added</h3><p>Reserved for a future academic distinction.</p>
+</article>
+</div>
+</div>
+</section><!-- /Achievements Section -->
 <section class="portfolio section" id="portfolio">
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
