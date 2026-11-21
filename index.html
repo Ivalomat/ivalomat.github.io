@@ -51,19 +51,33 @@
       }
     }
   
-/* Achievements use the same service-card style as Publications. */
-#achievements .section-title { padding-bottom: 26px; }
-#achievements .achievement-card { display: flex; flex-direction: column; }
-#achievements .achievement-card h3 a { color: inherit; text-decoration: none; }
+
+
+
+/* Achievements: restrained editorial cards, matched to the Publications palette. */
+#achievements .achievement-layout { --achievement-gap: 26px; row-gap: var(--achievement-gap); margin-left: -13px; margin-right: -13px; }
+#achievements .achievement-layout > [class*="col-"] { padding-left: 13px; padding-right: 13px; }
+#achievements .achievement-card {
+  box-sizing: border-box; min-height: 272px; height: 100%; padding: 27px 28px 24px;
+  background: var(--surface-color); border: 1px solid rgba(255,255,255,.20);
+  border-radius: 10px; box-shadow: none; display: flex; flex-direction: column;
+  transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+#achievements .achievement-card:hover { border-color: rgba(255,255,255,.40); background-color: color-mix(in srgb, var(--surface-color), white 3%); transform: translateY(-2px); }
+#achievements .achievement-year { display:block; margin: 0 0 21px !important; font-size: 11px; font-weight: 600; line-height: 1.55; letter-spacing: .085em; text-transform: uppercase; opacity: .66; }
+#achievements .achievement-card h3 { margin: 0 0 13px; font-size: 19px; font-weight: 700; line-height: 1.37; letter-spacing: -.012em; }
+#achievements .achievement-card h3 a { color: var(--heading-color); text-decoration: none; }
 #achievements .achievement-card h3 a:hover { color: var(--accent-color); }
-#achievements .achievement-card .achievement-download { margin-top: auto; align-self: flex-start; color: var(--accent-color); font-weight: 600; font-size: 13px; text-decoration: none; }
-#achievements .achievement-card .achievement-download:hover { color: var(--heading-color); }
-#achievements .achievement-card .achievement-download i { margin-right: 6px; }
-#achievements .achievement-card .achievement-year { color: var(--default-color); opacity: .72; letter-spacing: .05em; }
-/* Fine adjustments: smaller headings, more breathing room, and a subtle outline. */
-#achievements .achievement-card h3 { font-size: 20px; line-height: 1.4; }
-#achievements .achievement-card { border: 1px solid rgba(255,255,255,.20); border-radius: 12px; }
-#achievements .achievement-card:hover { border-color: rgba(255,255,255,.38); }
+#achievements .achievement-card p { margin: 0 0 23px; color: var(--default-color); opacity: .82; font-size: 14px; line-height: 1.65; }
+#achievements .achievement-card .achievement-download {
+  display: inline-flex; align-items:center; gap: 7px; margin-top: auto; align-self: flex-start;
+  padding-top: 13px; border-top: 1px solid rgba(255,255,255,.12); width: 100%;
+  color: var(--default-color); opacity: .85; font-size: 12px; font-weight: 600; text-decoration: none;
+}
+#achievements .achievement-card .achievement-download:hover { color: var(--accent-color); opacity: 1; }
+#achievements .achievement-card .achievement-download i { margin: 0; font-size: 15px; }
+@media (max-width: 991.98px) { #achievements .achievement-layout { row-gap: 22px; } }
+@media (max-width: 575.98px) { #achievements .achievement-card { min-height: 245px; padding: 25px; } }
 </style>
 </head>
 <body class="index-page">
@@ -704,7 +718,7 @@
 <p>Academic distinctions and science competitions from the early stages of my academic training.</p>
 </div>
 <div class="container" data-aos="fade-up" data-aos-delay="100">
-<div class="row justify-content-center gy-4"><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="service-card achievement-card position-relative z-1 h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">National Chemistry Olympiad · 2019</span><h3><a download="Chemistry-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-chemistry-olympiad-2019.pdf">Third Place · National Chemistry Olympiad</a></h3><p>Third-place distinction at the national level in the Mexican Chemistry Olympiad.</p><a aria-label="Download third place National Chemistry Olympiad diploma PDF" class="achievement-download" download="Chemistry-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-chemistry-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="service-card achievement-card position-relative z-1 h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">National Mathematics Olympiad · 2019</span><h3><a download="Mathematics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-mathematics-olympiad-2019.pdf">Honorable Mention · National Mathematics Olympiad</a></h3><p>Honorable mention in the national mathematics competition.</p><a aria-label="Download National Mathematics Olympiad honorable mention diploma PDF" class="achievement-download" download="Mathematics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-mathematics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="service-card achievement-card position-relative z-1 h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">Physics Olympiad · 2019</span><h3><a download="Physics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-physics-olympiad-2019.pdf">Third Place at State Level · National Participation</a></h3><p>Third place in the state Physics Olympiad and participation in the national competition.</p><a aria-label="Download Physics Olympiad diploma PDF" class="achievement-download" download="Physics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-physics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div aria-hidden="true" class="col-lg-4 col-md-6 d-none d-lg-block"></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="service-card achievement-card position-relative z-1 h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">Science &amp; Engineering Fair · 2018</span><h3><a download="Science-Engineering-Fair-2018-Diploma.pdf" href="assets/docs/achievement-science-engineering-fair-2018.pdf">State Winner · National Science and Engineering Fair</a></h3><p>Winner at the state level and participant in the national Science and Engineering Fair.</p><a aria-label="Download 2018 Science and Engineering Fair diploma PDF" class="achievement-download" download="Science-Engineering-Fair-2018-Diploma.pdf" href="assets/docs/achievement-science-engineering-fair-2018.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div aria-hidden="true" class="col-lg-4 col-md-6 d-none d-lg-block"></div></div>
+<div class="row justify-content-center gy-4 achievement-layout"><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="achievement-card h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">National Chemistry Olympiad · 2019</span><h3><a download="Chemistry-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-chemistry-olympiad-2019.pdf">Third Place · National Chemistry Olympiad</a></h3><p>Third-place distinction at the national level in the Mexican Chemistry Olympiad.</p><a aria-label="Download third place National Chemistry Olympiad diploma PDF" class="achievement-download" download="Chemistry-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-chemistry-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="achievement-card h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">National Mathematics Olympiad · 2019</span><h3><a download="Mathematics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-mathematics-olympiad-2019.pdf">Honorable Mention · National Mathematics Olympiad</a></h3><p>Honorable mention in the national mathematics competition.</p><a aria-label="Download National Mathematics Olympiad honorable mention diploma PDF" class="achievement-download" download="Mathematics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-mathematics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="achievement-card h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">Physics Olympiad · 2019</span><h3><a download="Physics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-physics-olympiad-2019.pdf">Third Place at State Level · National Participation</a></h3><p>Third place in the state Physics Olympiad and participation in the national competition.</p><a aria-label="Download Physics Olympiad diploma PDF" class="achievement-download" download="Physics-Olympiad-2019-Diploma.pdf" href="assets/docs/achievement-physics-olympiad-2019.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div aria-hidden="true" class="col-lg-4 col-md-6 d-none d-lg-block"></div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="achievement-card h-100"><span class="achievement-year d-inline-block mb-3 text-uppercase small">Science &amp; Engineering Fair · 2018</span><h3><a download="Science-Engineering-Fair-2018-Diploma.pdf" href="assets/docs/achievement-science-engineering-fair-2018.pdf">State Winner · National Science and Engineering Fair</a></h3><p>Winner at the state level and participant in the national Science and Engineering Fair.</p><a aria-label="Download 2018 Science and Engineering Fair diploma PDF" class="achievement-download" download="Science-Engineering-Fair-2018-Diploma.pdf" href="assets/docs/achievement-science-engineering-fair-2018.pdf"><i aria-hidden="true" class="bi bi-file-earmark-arrow-down"></i>Download diploma (PDF)</a></div></div><div aria-hidden="true" class="col-lg-4 col-md-6 d-none d-lg-block"></div></div>
 </div>
 </section><!-- /Recommendations Section -->
 <!-- Contact Section -->
